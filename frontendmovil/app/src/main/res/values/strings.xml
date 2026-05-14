@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">frontend movil</string>
+
+    <!-- Opciones para el Spinner de Género -->
+    <string-array name="opciones_genero">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>No binario</item>
+    </string-array>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="CREAR CUENTA"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+
+        <EditText
+            android:id="@+id/et_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Apellidos"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/et_edad"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Edad"
+            android:inputType="number"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu género:"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="5dp"/>
+
+        <Spinner
+            android:id="@+id/sp_genero"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginBottom="12dp"
+            android:entries="@array/opciones_genero" />
+
+
+        <EditText
+            android:id="@+id/et_correo_reg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:background="@android:drawable/editbox_background"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/et_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress"
+            android:gravity="top"
+            android:padding="15dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp" />
+
+
+        <EditText
+            android:id="@+id/et_password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:background="@android:drawable/editbox_background"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#0000FF"
+            android:text="REGISTRARSE"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_ir_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="¿Ya tienes cuenta? Inicia sesión"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
